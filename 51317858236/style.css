@@ -1,0 +1,89 @@
+body {
+  background-color: black;
+  color: white;
+  margin: 0;
+  font-family: "Roboto Mono", monospace;
+}
+
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.textclass {
+  color: red;
+}
+
+.t1 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(20, end), curser1 0.8s 4;
+  border-right: 8px solid transparent;
+  animation-delay: 0;
+  transition: 0.2s;
+}
+
+.t2 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(19, end), curser 0.8s infinite;
+  border-right: 8px solid white;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.t2 {
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: type 2s steps(19, end), curser 0.8s infinite;
+  border-right: 8px solid white;
+  animation-fill-mode: both;
+  animation-delay: 3s;
+}
+
+.t1:active {
+  border-right: 8px solid transparent;
+}
+
+@keyframes type {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes curser {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
+
+@keyframes curser1 {
+  0% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+  100% {
+    border-color: transparent;
+  }
+}
